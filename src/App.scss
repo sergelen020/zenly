@@ -1,9 +1,80 @@
 body {
     display: flex;
     justify-content: center;
+    position: relative;
 }
 .container {
-    height: 100vh;
+    height: 720px;
     width: 450px;
     background-color: aqua;
+    margin-top: 20px;
+    .pro-pic-container {
+        border-radius: 50%;
+        .pro-pic {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            box-shadow: 0px 0px 0px 10px #adf828;
+        }
+    }
+    .buttons {
+        position: absolute;
+        margin-top: 590px;
+        .search-button-container {
+            position: absolute;
+            margin-top: -50px !important;
+            margin-left: 137px !important;
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            background-color: white;
+            box-shadow: 1px 1px 5px gray;
+            margin: 10px;
+            .button {
+                height: 35px;
+                width: 35px;
+                border-radius: 50%;
+            }
+        }
+        .button-container{
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            background-color: white;
+            box-shadow: 1px 1px 5px gray;
+            margin: 35px;
+            .button {
+                height: 35px;
+                width: 35px;
+                border-radius: 50%;
+            }  
+        }
+        .aim-button-container {
+            height: 65px;
+            width: 65px;
+            border-radius: 50%;
+            background-color: white;
+            box-shadow: 1px 1px 5px gray;
+            margin: 10px;
+            .aim {
+                height: 45px;
+                width: 45px;
+                border-radius: 50%;
+            }
+        }
+        
+    }
+}
+
+
+
+
+.flex {
+    display: flex;
+}
+.center {
+    justify-content: center;
+}
+.perfect {
+    align-items: center;
 }

@@ -1,11 +1,10 @@
+import React from 'react';
 import './App.scss';
+import Home from './home.js'
 
 function App() {
   return (
-    <div className="container">
-      asdfsa
-
-    </div>
+    < Home/>
   );
 }
 
