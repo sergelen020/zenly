@@ -1,0 +1,38 @@
+.cont {
+    background-color: white;
+    .top {
+        width: 100%;
+        height: 100px;
+        background-color: aqua;
+        border-bottom-right-radius: 100%;
+        border-bottom-left-radius: 100%;
+        .pro-cont {
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            background-color: white;
+            margin-top: 50px;
+            box-shadow: 1px 1px 5px gray;
+            i {
+                width: 100px;
+                
+            }
+        }
+    }
+    ul {
+        margin-top: 70px;
+        li {
+            height: 70px;
+            input {
+                border: none;
+                margin-left: 10px;
+                outline: none;
+            }
+        }
+    }
+    .btn {
+        margin-top: 25px;
+        border-radius: 20px;
+        background-color: aqua;
+    }
+}

@@ -2,8 +2,9 @@ body {
     display: flex;
     justify-content: center;
     position: relative;
+    background-color: lightgray;
 }
-.container {
+.cont {
     height: 720px;
     width: 450px;
     background-color: aqua;
@@ -30,7 +31,7 @@ body {
             background-color: white;
             box-shadow: 1px 1px 5px gray;
             margin: 10px;
-            .button {
+            .buttonss {
                 height: 35px;
                 width: 35px;
                 border-radius: 50%;
@@ -43,7 +44,7 @@ body {
             background-color: white;
             box-shadow: 1px 1px 5px gray;
             margin: 35px;
-            .button {
+            .buttonss {
                 height: 35px;
                 width: 35px;
                 border-radius: 50%;
@@ -77,4 +78,7 @@ body {
 }
 .perfect {
     align-items: center;
+}
+.column {
+    flex-direction: column;
 }
