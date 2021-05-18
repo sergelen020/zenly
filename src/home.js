@@ -1,6 +1,6 @@
 import './App.scss';
 
-function Home() {
+function Home( { setIsProfile } ) {
   return (
     <div className="cont flex center perfect">
       <div className="pro-pic-container">
@@ -18,7 +18,7 @@ function Home() {
             <img className="buttonss aim" src="https://icon-library.com/images/aim-icon/aim-icon-27.jpg" alt=""/>
           </div>
           <div className="button-container flex center perfect">
-            <img className="buttonss" src="https://freesvg.org/img/abstract-user-flat-4.png" onClick="" alt=""/>
+            <img className="buttonss" src="https://freesvg.org/img/abstract-user-flat-4.png" onClick={() => {setIsProfile(true)}} alt=""/>
           </div>
         </div>
       </div>

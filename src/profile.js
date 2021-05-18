@@ -2,7 +2,7 @@ import React from 'react'
 import './profile.scss'
 
 
-function Profile() {
+function Profile( {setIsProfile} ) {
     return (
         <div className="cont">
             <div className="top flex center">
@@ -19,11 +19,11 @@ function Profile() {
                 <li class="collection-item flex perfect"><i className="material-icons">visibility</i><input type="" placeholder="Password" /></li>
             </ul>
             <div className="flex center">
-                <a class="waves-effect btn">Save profile</a>
+                <a href="#a" class="waves-effect btn" onClick={() => {setIsProfile(false)}} >Save profile</a>
             </div>
             
         </div>
     )
 }
 
-export default Profile
+export default Profile;
