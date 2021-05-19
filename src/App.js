@@ -7,12 +7,8 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
 } from "react-router-dom"
 
-function HomeP() {
-  return <Home />
-}
 
 function About() {
   return <Profile />
@@ -27,22 +23,6 @@ function App() {
   return (
     <Router>
       <div>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">HomeP</Link>
-            </li>
-            <li>
-              <Link to="/profile">About</Link>
-            </li>
-            <li>
-              <Link to="/addfriend">Users</Link>
-            </li>
-          </ul>
-        </nav>
-
-        {/* A <Switch> looks through its children <Route>s and
-            renders the first one that matches the current URL. */}
         <Switch>
           <Route path="/profile">
             <About />

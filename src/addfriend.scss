@@ -1,5 +1,21 @@
 .cont {
     background-color: white;
+    .req-cont {
+        margin-left: 45px !important;
+        margin: 10px;
+        i {
+            margin-top: 15px;
+        }
+        a {
+            margin-left: 20px;
+        }
+        input {
+            outline: none;
+        }
+        .btn {
+
+        }
+    }
 }
 .but-cont {
     margin-top: -10px !important;

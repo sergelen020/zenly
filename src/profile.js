@@ -1,5 +1,6 @@
 import React from 'react'
 import './profile.scss'
+import { Link } from "react-router-dom"
 
 
 function Profile( {setIsProfile} ) {
@@ -19,7 +20,7 @@ function Profile( {setIsProfile} ) {
                 <li class="collection-item flex perfect"><i className="material-icons">visibility</i><input type="" placeholder="Password" /></li>
             </ul>
             <div className="flex center">
-                <a href="#a" class="waves-effect btn" >Save profile</a>
+                <Link to="/"><a href="#a" class="waves-effect btn" >Save profile</a></Link>
             </div>
             
         </div>

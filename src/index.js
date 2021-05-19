@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import Addfriend from './addfriend'
 
 ReactDOM.render(
   <React.StrictMode>
