@@ -19,7 +19,7 @@ function Profile( {setIsProfile} ) {
                 <li class="collection-item flex perfect"><i className="material-icons">visibility</i><input type="" placeholder="Password" /></li>
             </ul>
             <div className="flex center">
-                <a href="#a" class="waves-effect btn" onClick={() => {setIsProfile(false)}} >Save profile</a>
+                <a href="#a" class="waves-effect btn" >Save profile</a>
             </div>
             
         </div>

@@ -1,6 +1,14 @@
+import React from 'react'
 import './App.scss';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+  useHistory
+} from "react-router-dom"
 
-function Home( { setIsProfile } ) {
+function Home() {
   return (
     <div className="cont flex center perfect">
       <div className="pro-pic-container">
@@ -18,7 +26,7 @@ function Home( { setIsProfile } ) {
             <img className="buttonss aim" src="https://icon-library.com/images/aim-icon/aim-icon-27.jpg" alt=""/>
           </div>
           <div className="button-container flex center perfect">
-            <img className="buttonss" src="https://freesvg.org/img/abstract-user-flat-4.png" onClick={() => {setIsProfile(true)}} alt=""/>
+          <Router><Link to="/profile"><img className="buttonss" src="https://freesvg.org/img/abstract-user-flat-4.png" alt=""/></Link></Router>
           </div>
         </div>
       </div>
