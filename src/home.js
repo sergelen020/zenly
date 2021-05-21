@@ -8,7 +8,7 @@ function Home(props) {
   return (
     <div className="cont flex center perfect">
       <div className="pro-pic-container">
-          <img className="pro-pic" src="https://www.planetware.com/wpimages/2020/02/france-in-pictures-beautiful-places-to-photograph-eiffel-tower.jpg" alt=""/>
+          <Link to="/authen"><img className="pro-pic" src="https://www.planetware.com/wpimages/2020/02/france-in-pictures-beautiful-places-to-photograph-eiffel-tower.jpg" alt=""/></Link>
       </div>
       <div className="buttons">
         <div className="search-button-container flex center perfect" >

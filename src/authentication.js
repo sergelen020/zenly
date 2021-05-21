@@ -1,6 +1,7 @@
 import React, { useState, useEffect} from 'react';
 import firebase, { firestore, auth} from './firebase';
-
+import {Link} from "react-router-dom"
+import './authentication.scss';
 
 function Auth () {
     const [input, setInput] = useState('');
@@ -17,14 +18,21 @@ function Auth () {
     const sendConfirmCode = async () => {
         setLoading(true)
         const appVerifier = window.recaptchaVerifier;
-        try {
-            window.confirmationResult = await auth.signInWithPhoneNumber(`+976${input}`, appVerifier)
-            setSentCode(true);
-        } catch (e) {
-            console.log(e);
-        } finally {
-            setLoading(false);
+        if(input.length === 8) {
+            try {
+                window.confirmationResult = await auth.signInWithPhoneNumber(`+976${input}`, appVerifier)
+                setSentCode(true);
+            } catch (e) {
+                console.log(e);
+            } finally {
+                setLoading(false);
+            }
+        } else if( input.length ===0){
+            alert ("please enter your phone number")
+        } else {
+            alert ("it must contain 8 digits")
         }
+        
     }
     const login = async () => {
         try {
@@ -34,7 +42,8 @@ function Auth () {
         }
     }
     return (
-        <div>
+        <div className="cont flex perfect center column auth">
+            <h4>Log in using phone number</h4>
             <input
                 value={input}
                 onChange={(event) => setInput(event.target.value)}
@@ -50,7 +59,7 @@ function Auth () {
                             onChange={(event) => setConfirmCode(event.target.value)}
                             placeholder="auth code"
                         />
-                        <button onClick={login}>log in</button>
+                        <Link to="/"><button onClick={login}>log in</button> </Link>
                     </>
                 )
             }

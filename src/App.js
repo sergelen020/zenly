@@ -3,12 +3,17 @@ import './App.scss';
 import Home from './home.js'
 import Profile from './profile.js'
 import Addfriend from './addfriend'
+import Auth from './authentication'
 import {
   BrowserRouter as Router,
   Switch,
   Route,
+  Redirect
 } from "react-router-dom"
 
+function Authen() {
+  return <Authen />
+}
 function About() {
   return <Profile />
 }
@@ -28,6 +33,9 @@ function App() {
           </Route>
           <Route path="/addfriend">
             <Users />
+          </Route>
+          <Route path="/authen">
+            <Auth />
           </Route>
           <Route path="/">
             <Home />
