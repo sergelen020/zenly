@@ -1,9 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './profile.scss'
+import Changeprofile from './changeprofile'
 import { Link } from "react-router-dom"
 
 
-function Profile( {setIsProfile} ) {
+function Profile(props) {
+    const { username, date, phoneNumber } = props;
     return (
         <div className="cont">
             <div className="top flex center">
@@ -12,15 +14,14 @@ function Profile( {setIsProfile} ) {
                 </div>
             </div>
             <ul class="collection flex column">
-                <li class="collection-item flex perfect"><i className="material-icons">person</i><input type="" placeholder="Username" /></li>
-                <li class="collection-item flex perfect"><i className="material-icons">date_range</i><input type="" placeholder="Birthday" /></li>
-                <li class="collection-item flex perfect"><i className="material-icons">phone</i><input type="" placeholder="Phone number" /></li>
-                <li class="collection-item flex perfect"><i className="material-icons">mail</i><input type="" placeholder="Instagram account" /></li>
-                <li class="collection-item flex perfect"><i className="material-icons">mail</i><input type="" placeholder="Email" /></li>
-                <li class="collection-item flex perfect"><i className="material-icons">visibility</i><input type="" placeholder="Password" /></li>
+                <li class="collection-item flex perfect"><i className="material-icons">person</i>{ username }</li>
+                <li class="collection-item flex perfect"><i className="material-icons">date_range</i>{ date }</li>
+                <li class="collection-item flex perfect"><i className="material-icons">phone</i>{ phoneNumber }</li>
+                <li class="collection-item flex perfect"><i className="material-icons">mail</i>seegiii_</li>
+                <li class="collection-item flex perfect"><i className="material-icons">mail</i>sergelen020@gmail.com</li>
             </ul>
             <div className="flex center">
-                <Link to="/"><a href="#a" class="waves-effect btn" >Save profile</a></Link>
+                <Link to="/changeprofile"><a href="#a" class="waves-effect btn" >Edit profile</a></Link>
             </div>
             
         </div>

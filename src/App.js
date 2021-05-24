@@ -1,20 +1,23 @@
 import React from 'react';
 import './App.scss';
 import Home from './home.js'
-import Profile from './profile.js'
+import Changeprofile from './changeprofile'
 import Addfriend from './addfriend'
 import Auth from './authentication'
+import Profile from './profile'
 import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Redirect
 } from "react-router-dom"
 
 function Authen() {
   return <Authen />
 }
 function About() {
+  return <Changeprofile />
+}
+function Seeprofile() {
   return <Profile />
 }
 
@@ -28,8 +31,11 @@ function App() {
     <Router>
       <div>
         <Switch>
-          <Route path="/profile">
+          <Route path="/changeprofile">
             <About />
+          </Route>
+          <Route path="/profile">
+            <Seeprofile />
           </Route>
           <Route path="/addfriend">
             <Users />
