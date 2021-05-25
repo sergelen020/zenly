@@ -1,7 +1,7 @@
 import firebase from 'firebase';
 
 const config = {
-    apiKey: "AIzaSyB_byTqdLswwuoZaw5R4x5T44bbQYMUggA",
+  apiKey: "AIzaSyB_byTqdLswwuoZaw5R4x5T44bbQYMUggA",
   authDomain: "zenly-bfb10.firebaseapp.com",
   projectId: "zenly-bfb10",
   storageBucket: "zenly-bfb10.appspot.com",

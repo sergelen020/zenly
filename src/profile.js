@@ -2,10 +2,12 @@ import React, { useState } from 'react'
 import './profile.scss'
 import Changeprofile from './changeprofile'
 import { Link } from "react-router-dom"
-
+import DatePicker from "react-datepicker";
+import {firestore} from './firebase'
 
 function Profile(props) {
-    const { username, date, phoneNumber } = props;
+    const db = firestore;
+    const { date } = props
     return (
         <div className="cont">
             <div className="top flex center">
@@ -14,9 +16,9 @@ function Profile(props) {
                 </div>
             </div>
             <ul class="collection flex column">
-                <li class="collection-item flex perfect"><i className="material-icons">person</i>{ username }</li>
+                <li class="collection-item flex perfect"><i className="material-icons">person</i>username</li>
                 <li class="collection-item flex perfect"><i className="material-icons">date_range</i>{ date }</li>
-                <li class="collection-item flex perfect"><i className="material-icons">phone</i>{ phoneNumber }</li>
+                <li class="collection-item flex perfect"><i className="material-icons">phone</i>phone number</li>
                 <li class="collection-item flex perfect"><i className="material-icons">mail</i>seegiii_</li>
                 <li class="collection-item flex perfect"><i className="material-icons">mail</i>sergelen020@gmail.com</li>
             </ul>

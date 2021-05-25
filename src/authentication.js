@@ -11,12 +11,10 @@ function Auth () {
 
     useEffect(()=> {
         window.recaptchaVerifier = new firebase.auth.RecaptchaVerifier('sign-in-button', {
-
         });
     }, []);
 
     const sendConfirmCode = async () => {
-        setLoading(true)
         const appVerifier = window.recaptchaVerifier;
         if(input.length === 8) {
             try {
