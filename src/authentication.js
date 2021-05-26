@@ -1,4 +1,5 @@
 import React, { useState, useEffect} from 'react';
+import App from './App'
 import firebase, { firestore, auth} from './firebase';
 import {Link} from "react-router-dom"
 import './authentication.scss';
@@ -57,11 +58,10 @@ function Auth () {
                             onChange={(event) => setConfirmCode(event.target.value)}
                             placeholder="auth code"
                         />
-                        <Link to="/"><button onClick={login}>log in</button> </Link>
+                        <Link to="/login"><button onClick={login}>log in</button> </Link>
                     </>
                 )
             }
-
         </div>
     )
 }
