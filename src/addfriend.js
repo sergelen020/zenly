@@ -31,7 +31,7 @@ function Addfriend() {
                     </div>
                 </li>
                 <li className="collection-item avatar flex perfect">
-                <img src="https://images.unsplash.com/photo-1593642634315-48f5414c3ad9?ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxNnx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60" className="circle" alt=""/>
+                    <img src="https://images.unsplash.com/photo-1593642634315-48f5414c3ad9?ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxNnx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60" className="circle" alt=""/>
                     <span className="title">Username</span>
                     <div className="secondary-content flex column but-cont">
                         <a href="#!" className="waves-effect waves-light btn flex perfect accept green">accept</a>
