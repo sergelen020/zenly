@@ -6,9 +6,17 @@ import "react-datepicker/dist/react-datepicker.css";
 import firebase, { firestore } from './firebase';
 
 
-function Changeprofile({input}) {
+function Changeprofile({input, user}) {
     const [date, setDate] = useState(new Date());
     const [profile, setProfile] = useState({});
+    const handleInputChange = (fields) => {
+        return (e) => {
+            setProfile({
+                ...profile,
+                [field]:e.target.value,
+            })
+        }
+    }   
 
     function changeprofile () {
         console.log(input)
